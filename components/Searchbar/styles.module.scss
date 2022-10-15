@@ -1,0 +1,32 @@
+.searchbarContainer {
+  display: flex;
+  background-color: var(--navbargray);
+  border-radius: 6px;
+  align-items: center;
+  margin-top: 30px;
+
+  .searchbar {
+    width: 96%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: Rubik, sans-serif;
+    padding: 10px 15px;
+
+    &::placeholder {
+      color: var(--darktextgray);
+    }
+  }
+
+  .searchContainer {
+    cursor: pointer;
+    width: 4%;
+    display: flex;
+    justify-content: center;
+
+    .search {
+      margin: 2px 0px 0px 0px;
+      max-width: 16px;
+    }
+  }
+}

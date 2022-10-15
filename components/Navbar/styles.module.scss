@@ -1,0 +1,20 @@
+.container {
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--navbargray);
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
+
+  .contentContainer {
+    width: 80%;
+    display: flex;
+    align-items: center;
+
+    .logoContainer {
+      cursor: pointer;
+      margin-top: 2px;
+      max-width: 50px;
+    }
+  }
+}

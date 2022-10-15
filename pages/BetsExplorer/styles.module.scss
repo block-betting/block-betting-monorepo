@@ -1,0 +1,13 @@
+.centerContainer {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: var(--backgroundgray);
+
+  .container {
+    width: 80%;
+    height: 88vh;
+
+  }
+}
