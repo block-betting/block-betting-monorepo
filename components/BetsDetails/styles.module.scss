@@ -57,4 +57,95 @@
     height: 1px;
     margin: 15px 0px;
   }
+
+  .dataContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--navbargray);
+    padding: 15px;
+    border-radius: 15px;
+
+    .overviewLine {
+      width: 100%;
+      height: 1px;
+      background-color: var(--darktextgray);
+    }
+
+    .overviewContainer {
+      padding-top: 5px;
+      padding-bottom: 15px;
+
+      .title {
+        font-size: 18px;
+      }
+    }
+
+    .copyContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 15px 0px;
+
+      .title {
+        font-size: 16px;
+      }
+
+      .centerData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .rowContainer {
+          display: flex;
+
+          .imageContainer {
+            cursor: pointer;
+            margin-right: 7px;
+            margin-top: 0px;
+          }
+
+          .data {
+            font-size: 10px;
+            color: var(--datacolor);
+          }
+        }
+      }
+    }
+
+    .noCopyContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 15px 0px;
+
+      .title {
+        font-size: 16px;
+      }
+
+      .centerData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .data {
+          font-size: 10px;
+          color: var(--datacolor);
+        }
+      }
+    }
+  }
+
+  .resultsDetailsContainer {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--navbargray);
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 10px;
+
+    .arrow {
+      margin-left: 7px;
+    }
+  }
 }
