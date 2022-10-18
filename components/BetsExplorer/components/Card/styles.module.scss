@@ -1,0 +1,20 @@
+.dataContainer {
+  display: grid;
+  grid-template-columns: 0.5fr 3.02fr 1.66fr 1.06fr;
+  background-color: var(--navbargray);
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 12px;
+  color: var(--textgray);
+}
+
+.centerLine {
+  display: flex;
+  justify-content: center;
+
+  .line {
+    width: 97.5%;
+    height: 1px;
+    background-color: var(--darktextgray);
+  }
+}

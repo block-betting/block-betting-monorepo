@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useState } from 'react'
 
 import styles from './styles.module.scss'
 
@@ -7,6 +8,8 @@ import refresh from './assets/refresh.svg'
 import inspect from './assets/inspect.svg'
 import copy from './assets/copy.svg'
 import arrow from './assets/arrow.svg'
+import success from './assets/success.svg'
+import Link from 'next/link'
 
 type dataProps = {
   betHashData: string,
@@ -15,7 +18,10 @@ type dataProps = {
   associatedValueData: string
 }
 
-const BetsDetails = ({...props}: dataProps) => {
+const BetsDetailsComponent = ({...props}: dataProps) => {
+  const [resultsOpen, setResultsOpen] = useState(false)
+  const [detailsOpen, setDetailsOpen] = useState(false)
+
   return (
     <div className={styles.container}>
       <div className={styles.headerContainer}>
@@ -30,7 +36,7 @@ const BetsDetails = ({...props}: dataProps) => {
         </div>
 
         <div className={styles.optionsContainer}>
-        <div className={styles.buttonContainer}>
+          <Link href='/'><div className={styles.buttonContainer}>
             <div className={styles.buttonText}>
               Back
             </div>
@@ -38,7 +44,7 @@ const BetsDetails = ({...props}: dataProps) => {
             <div className={styles.buttonImage}>
               <Image src={back} alt='Back' />
             </div>
-          </div>
+          </div></Link>
 
           <div className={styles.buttonContainer}>
             <div className={styles.buttonText}>
@@ -146,27 +152,75 @@ const BetsDetails = ({...props}: dataProps) => {
         </div>
       </div>
 
-      <div className={styles.resultsDetailsContainer}>
-        <div className={styles.title}>
-          Results
+      <div className={styles.resultsDetailsContainer} onClick={() => setResultsOpen(!resultsOpen)}>
+        <div className={styles.header}>
+          <div className={styles.leftSide}>
+            <div className={styles.title}>
+              Results
+            </div>
+
+            <div className={styles.arrow}>
+              <Image src={arrow} alt='Expand' />
+            </div>
+          </div>
+
+          {resultsOpen == true ? 
+            <div className={styles.rightSide}>
+              <div className={styles.successContainer}>
+                <Image src={success} alt='Success' />
+              </div>
+            </div> 
+          : null }
         </div>
 
-        <div className={styles.arrow}>
-          <Image src={arrow} alt='Expand' />
-        </div>
+        {resultsOpen == true ?
+          <div className={styles.dataContainer}>
+            data <br />
+            data <br />
+            data <br />
+            data <br />
+            Phil é viciado em gatos <br />
+            data <br />
+            data <br />
+          </div>
+        : null}
       </div>
 
-      <div className={styles.resultsDetailsContainer}>
-        <div className={styles.title}>
-          Details
+      <div className={styles.resultsDetailsContainer} onClick={() => setDetailsOpen(!detailsOpen)}>
+        <div className={styles.header}>
+          <div className={styles.leftSide}>
+            <div className={styles.title}>
+              Details
+            </div>
+
+            <div className={styles.arrow}>
+              <Image src={arrow} alt='Expand' />
+            </div>
+          </div>
+
+          {detailsOpen == true ? 
+            <div className={styles.rightSide}>
+              <div className={styles.successContainer}>
+                <Image src={success} alt='Success' />
+              </div>
+            </div> 
+          : null }
         </div>
 
-        <div className={styles.arrow}>
-          <Image src={arrow} alt='Expand' />
-        </div>
+        {detailsOpen == true ?
+          <div className={styles.dataContainer}>
+            data <br />
+            data <br />
+            data <br />
+            data <br />
+            E em brejas<br />
+            data <br />
+            data <br />
+          </div>
+        : null}
       </div>
     </div>
   )
 }
 
-export default BetsDetails
+export default BetsDetailsComponent
