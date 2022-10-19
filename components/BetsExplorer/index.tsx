@@ -39,6 +39,7 @@ const BetsExplorerComponent = () => {
         <a href='/betdetails'><Card number={14} betHash='588vN2WenXv3YCNqvQoMQmhLeVWuTGMzAU67pQ8Zxiu8' totalBetValue='000000' games='Block Betting'/></a>
         <a href='/betdetails'><Card number={15} betHash='588vN2WenXv3YCNqvQoMQmhLeVWuTGMzAU67pQ8Zxiu8' totalBetValue='000000' games='Block Betting'/></a>
         <a href='/betdetails'><Card number={16} betHash='588vN2WenXv3YCNqvQoMQmhLeVWuTGMzAU67pQ8Zxiu8' totalBetValue='000000' games='Block Betting'/></a>
+        <a href='/betdetails'><Card number={17} betHash='588vN2WenXv3YCNqvQoMQmhLeVWuTGMzAU67pQ8Zxiu8' totalBetValue='000000' games='Block Betting'/></a>
 
       </div>
     </div>
