@@ -52,12 +52,10 @@ const LoginComponent = () => {
             </div>
 
             <div className={styles.buttonContainer}>
-              <div className={styles.button}>
+              <div className={styles.button} onClick={() => window.open('/dashboard', '_self')}>
                 Log in
               </div>
             </div>
-
-            <DataNotMatch />
             
             <div className={styles.centerForgot}>
               <div className={styles.forgot}>
