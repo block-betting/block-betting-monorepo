@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900;1000&display=swap");
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--backgroundgray);
+
+  .columnContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+
+    .squareContainer {
+      width: 30vw;
+      background-color: var(--navbargray);
+      padding: 30px 50px 30px 50px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.15);
+
+      .logoContainer {
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .centerContainer {
+          cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            filter: brightness(130%);
+          }
+        }
+      }
+
+      .title {
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .description {
+        text-align: center;
+        font-size: 14px;
+        color: #505050;
+        margin: 15px 0px 20px 0px;
+      }
+
+      .formContainer {
+        display: flex;
+        flex-direction: column;
+        font-family: "Recursive", sans-serif;
+        font-size: 14px;
+
+        .emailContainer {
+          margin-bottom: 20px;
+
+          .label {
+            color: #515151;
+            margin: 0px 0px 5px 10px;
+          }
+
+          .emailInput {
+            width: 100%;
+            padding: 10px 0px 10px 8px;
+            border: 1px solid var(--backgroundgray);
+            border-radius: 10px;
+            background: transparent;
+            outline: transparent;
+          }
+        }
+
+        .buttonContainer {
+          cursor: pointer;
+          background: #41f200;
+          padding: 1px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          margin-top: 10px;
+          font-family: Rubik, sans-serif;
+
+          .button {
+            text-align: center;
+            font-size: 16px;
+            color: #41f200;
+            background-color: var(--navbargray);
+            padding: 14px 0px;
+            border-radius: 10px;
+            transition: 0.3s;
+
+            &:hover {
+              background: transparent;
+              color: #1e1e1e;
+            }
+          }
+        }
+      }
+    }
+  }
+}
