@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
+import ChangePasswordComponent from '../components/ChangePassword'
+
 const ChangePassword: NextPage = () => {
   return (
     <>
@@ -9,6 +11,8 @@ const ChangePassword: NextPage = () => {
         <meta name="Block Betting" content="Descentralized bets and more." />
         <link rel="icon" href="../public/brand/logo" />
       </Head>
+
+      <ChangePasswordComponent />
     </>
   )
 }

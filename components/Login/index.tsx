@@ -58,7 +58,7 @@ const LoginComponent = () => {
             </div>
             
             <div className={styles.centerForgot}>
-              <div className={styles.forgot}>
+              <div className={styles.forgot} onClick={() => window.open('/passwordrecovery', '_self')}>
                 I forgot my password
               </div>
             </div>

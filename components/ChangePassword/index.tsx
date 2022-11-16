@@ -7,7 +7,7 @@ import logo from '../../public/assets/brand/logo.svg'
 import eye from './assets/eye.svg'
 import noneye from './assets/noneye.svg'
 
-const SignUpComponent = () => {
+const ChangePasswordComponent = () => {
   const [passVisible, setPassVisible] = useState(false)
   const [confirmPassVisible, setConfirmPassVisible] = useState(false)
 
@@ -21,12 +21,11 @@ const SignUpComponent = () => {
             </div>
           </div>
 
-          <div className={styles.formContainer}>
-            <div className={styles.emailContainer}>
-              <div className={styles.label}>Email</div>
-              <input type="text" className={styles.emailInput} />
-            </div>
+          <div className={styles.title}>
+            Password Recovery
+          </div>
 
+          <div className={styles.formContainer}>
             <div className={styles.passwordContainer}>
               <div className={styles.label}>Password</div>
               <div className={styles.row}>
@@ -54,13 +53,9 @@ const SignUpComponent = () => {
             </div>
 
             <div className={styles.buttonContainer}>
-              <div className={styles.button} onClick={() => window.open('/login', '_self')}>
-                Sign up
+              <div className={styles.button} onClick={() => window.open('/dashboard', '_self')}>
+                Confirm
               </div>
-            </div>
-
-            <div className={styles.registerContainer}>
-              Already have an account? <span onClick={() => window.open('/login', '_self')}>Login</span>
             </div>
           </div>
         </div>
@@ -69,4 +64,4 @@ const SignUpComponent = () => {
   )
 }
 
-export default SignUpComponent
+export default ChangePasswordComponent
