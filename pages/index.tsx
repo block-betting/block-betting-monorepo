@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import BetsExplorerContainer from '../components/BetsExplorer'
+import BetsExplorerComponent from '../components/BetsExplorer'
 import Navbar from '../components/Navbar'
-
-import BetsExplorer from './BetsExplorer'
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Navbar />
-      <BetsExplorer />
+      <BetsExplorerContainer />
     </>
   )
 }

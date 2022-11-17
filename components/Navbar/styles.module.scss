@@ -10,11 +10,52 @@
     width: 80%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     .logoContainer {
-      cursor: pointer;
-      margin-top: 2px;
-      max-width: 50px;
+
+      .logo {
+        cursor: pointer;
+        margin-top: 2px;
+        max-width: 50px;
+      }
+    }
+
+    .buttonsContainer {
+      display: flex;
+      gap: 10px;
+
+      .loginContainer {
+        cursor: pointer;
+        border: solid var(--green) 1px;
+        border-radius: 10px;
+        padding: 10px 40px ;
+        color: var(--green);
+        font-weight: 400;
+        transition: 0.5s;
+
+        &:hover {
+          background: var(--green);
+          color: var(--navbargray);
+        }
+      }
+
+      .signinContainer {
+        cursor: pointer;
+        border: solid var(--green) 1px;
+        border-radius: 10px;
+        padding: 10px 40px ;
+        color: var(--navbargray);
+        background: var(--green);
+        font-weight: 400;
+        transition: 0.5s;
+
+        &:hover {
+          background: #5C1DBB;
+          color: var(--green);
+          border: solid #5C1DBB 1px;;
+        }
+      }
     }
   }
 }

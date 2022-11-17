@@ -9,9 +9,23 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.contentContainer}>
-        <Link href={'/'}><div className={styles.logoContainer}>
-          <Image src={logo} alt='Logo' />
-        </div></Link>
+        <div className={styles.logoContainer}>
+          <Link href={'/'}>
+            <div className={styles.logo}>
+              <Image src={logo} alt='Logo' />
+            </div>
+          </Link>
+        </div>
+
+        <div className={styles.buttonsContainer}>
+          <div className={styles.loginContainer}>
+            Log in
+          </div>
+
+          <div className={styles.signinContainer}>
+            Sign in
+          </div>
+        </div>
       </div>
     </div>
   )

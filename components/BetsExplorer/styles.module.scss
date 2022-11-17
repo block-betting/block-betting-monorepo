@@ -1,25 +1,11 @@
 .container {
   display: flex;
-  flex-direction: column;
-  background-color: var(--backgroundgray);
-  margin-top: 40px;
+  flex-direction: row;
+  justify-content: center;
+  background: var(--backgroundgray);
 
-  .header {
-    display: grid;
-    grid-template-columns: 0.5fr 3fr 2fr 1fr;
-    background-color: var(--navbargray);
-    padding: 15px;
-    border-radius: 15px;
-    font-size: 14px;
-  }
-
-  .dataContainer {
+  .columnContainer {
     display: flex;
     flex-direction: column;
-    background-color: var(--navbargray);
-    border-radius: 15px;
-    font-size: 12px;
-    margin-top: 10px;
-    padding-bottom: 5px;
   }
 }
