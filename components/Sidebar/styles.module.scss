@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  position: fixed;
+
+  .sidebar {
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0px 0px 0px;
+    background-color: var(--navbargray);
+
+    .topContainer {
+      display: flex;
+      flex-direction: column;
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .optionContainer {
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        padding: 10px 0px 10px 20px;
+        align-items: center;
+        transition: 0.5s;
+        
+        &:hover {
+          background: #5C1DBB;
+        }
+
+        .image {
+          margin-top: 5px;
+        }
+
+        .text {
+          margin-left: 15px;
+          font-size: 15px;
+        }
+      }
+
+      .optionContainerSelected {
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        padding: 10px 0px 10px 20px;
+        align-items: center;
+        background: var(--green);
+
+        .image {
+          margin-top: 5px;
+          filter: brightness(10%);
+        }
+
+        .text {
+          margin-left: 15px;
+          color: var(--backgroundgray);
+          font-size: 15px;
+        }
+      }
+    }
+
+    .optionsContainer {
+      display: flex;
+      flex-direction: column;
+
+      .settingsContainer {
+        cursor: pointer;
+        padding: 10px 0px 10px 20px;
+        display: flex;
+        flex-direction: row;
+        transition: 0.5s;
+        
+        &:hover {
+          background: #5C1DBB;
+        }
+
+        .settingsImage {
+          padding-right: 15px;
+        }
+
+        .text {
+          padding-top: 6px;
+          font-size: 15px;
+        }
+      }
+
+      .disconnectContainer {
+        cursor: pointer;
+        padding: 10px 0px 10px 20px;
+        display: flex;
+        flex-direction: row;
+        transition: 0.5s;
+        
+        &:hover {
+          background: #5C1DBB;
+        }
+
+        .disconnectImage {
+          padding-right: 15px;
+        }
+
+        .text {
+          padding-top: 5px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

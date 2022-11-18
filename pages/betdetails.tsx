@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import BetsDetailsContainer from '../components/BetsDetails'
+
 import Navbar from '../components/Navbar'
+import BetsDetailsContainer from '../components/BetsDetails'
 
 const BetDetails: NextPage = () => {
   return (

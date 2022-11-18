@@ -1,10 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import DashboardComponent from '../components/Dashboard'
 
-import Navbar from '../components/Navbar'
-import BetsExplorerContainer from '../components/BetsExplorer'
-
-const Home: NextPage = () => {
+const Dashboard: NextPage = () => {
   return (
     <>
       <Head>
@@ -13,10 +11,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="../public/brand/logo" />
       </Head>
 
-      <Navbar />
-      <BetsExplorerContainer />
+      <DashboardComponent />
     </>
   )
 }
 
-export default Home
+export default Dashboard

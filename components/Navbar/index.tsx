@@ -18,11 +18,11 @@ const Navbar = () => {
         </div>
 
         <div className={styles.buttonsContainer}>
-          <div className={styles.loginContainer}>
+          <div className={styles.loginContainer} onClick={() => window.open('/login', '_self')}>
             Log in
           </div>
 
-          <div className={styles.signinContainer}>
+          <div className={styles.signinContainer} onClick={() => window.open('/signup', '_self')}>
             Sign in
           </div>
         </div>
