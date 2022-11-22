@@ -10,7 +10,7 @@ import mybets from './assets/mybets.svg'
 import favorites from './assets/favorites.svg'
 import { useState } from 'react'
 
-const Sidebar = () => {
+const MyBetsSidebar = () => {
   const [selected] = useState(true)
 
   return (
@@ -21,7 +21,7 @@ const Sidebar = () => {
             <Image src={logo} alt='Logo' style={{cursor: 'pointer'}}/>
           </div>
 
-          <div className={selected == true ? styles.optionContainerSelected : styles.optionContainer}>
+          <div className={styles.optionContainer} onClick={() => window.open('/dashboard', '_self')}>
             <div className={styles.image}>
               <Image src={bets} alt='Bets' />
             </div>
@@ -41,7 +41,7 @@ const Sidebar = () => {
             </div>
           </div>
 
-          <div className={styles.optionContainer} onClick={() => window.open('/favorites', '_self')}>
+          <div className={selected == true ? styles.optionContainerSelected : styles.optionContainer}>
             <div className={styles.image}>
               <Image src={favorites} alt='Bets' />
             </div>
@@ -78,4 +78,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default MyBetsSidebar
