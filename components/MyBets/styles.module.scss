@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background: var(--backgroundgray);
+
+  .column {
+    margin-left: -100px;
+    display: flex;
+    flex-direction: column;
+
+    .createBetContainer {
+      width: 100vw;
+      height: 15vh;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      .button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px 10px;
+        border: 1px solid var(--green);
+        border-radius: 10px;
+        color: var(--green);
+        transition: 0.3s;
+
+        &:hover {
+          cursor: pointer;
+          background: #5C1DBB;
+          border: 1px solid #5C1DBB;
+        }
+
+        .image {
+          margin-top: 4px;
+          max-width: 18px;
+        }
+      }
+    }
+  }
+  
+  .popupContainer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(33, 33, 33, 0.75);
+  
+    .centerRow {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  
+      .centerColumn {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .popup {
+          width: 30vw;
+          display: flex;
+          flex-direction: column;
+          padding: 20px 50px;
+          background: var(--navbargray);
+          border-radius: 10px;
+
+          .close {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-right: -30px;
+          }
+
+          .inputContainer {
+            padding: 10px 0px;
+
+            .label {
+              color: #515151;
+              font-size: 14px;
+              margin-left: 8px;
+              margin-bottom: 5px;
+            }
+
+            .input {
+              
+              :is(input, select) {
+                width: 100%;
+                border: 1px solid #212121;
+                border-radius: 10px;
+                outline: transparent;
+                background: var(--navbargray);
+                padding: 8px 0px;
+                margin: 0px 5px;
+              }
+            }
+          }
+
+          .row {
+            display: flex;
+            gap: 10px;
+          }
+
+          .buttonContainer {
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+            border: solid 1px var(--green);
+            border-radius: 10px;
+            color: var(--green);
+            padding: 14px 0px;
+            transition: 0.3s;
+
+            &:hover {
+              background: #5C1DBB;
+              border: 1px solid #5C1DBB;
+            }
+          }
+        }
+      }
+    }
+  }
+}

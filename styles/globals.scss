@@ -44,3 +44,17 @@ a {
   border-radius: 20px;
   border: 3px solid #3c3c3c;
 }
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--backgroundgray);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #41F200;
+  border-radius: 20px;
+  border: 2px solid var(--backgroundgray);
+}
