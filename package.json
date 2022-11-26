@@ -17,6 +17,8 @@
     "react-dom": "18.2.0",
     "sass": "^1.55.0",
     "web3": "^1.8.1",
+    "web3-eth-contract": "^1.8.1",
+    "web3-utils": "^1.8.1",
     "web3modal": "^1.9.10"
   },
   "devDependencies": {

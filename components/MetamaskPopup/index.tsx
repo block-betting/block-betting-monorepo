@@ -9,11 +9,6 @@ import { Web3ModalContext } from '../../context/web3modal';
 const MetamaskPopup = () => {
   
   const { account , connect } = useContext(Web3ModalContext);
-
-  // Set visible false if account exist and true if account is null
-
-  
-
   const [visible, setVisible] = useState<boolean>(false);
 
   const hasAccount = useCallback (async (): Promise<boolean> => {
@@ -24,7 +19,6 @@ const MetamaskPopup = () => {
     }
   }, [account]);
 
-  // trigger a re-render
     
   useEffect( () => {
     hasAccount().then((result) => {

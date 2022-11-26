@@ -9,15 +9,6 @@ const CardGrid = () => {
         <Card hash='0x33624' totalValue='99999' gameName='JaumCoin Casino' owner='JaumDark' players={843} stars={1230} />
         <Card hash='0x33624' totalValue='99999' gameName='JaumCoin Casino' owner='JaumDark' players={843} stars={1230} />
         <Card hash='0x33624' totalValue='99999' gameName='JaumCoin Casino' owner='JaumDark' players={843} stars={1230} />
-        <Card hash='0x33624' totalValue='99999' gameName='JaumCoin Casino' owner='JaumDark' players={843} stars={1230} />
-        <Card hash='0x33624' totalValue='99999' gameName='JaumCoin Casino' owner='JaumDark' players={843} stars={1230} />
-        <Card hash='0x33624' totalValue='99999' gameName='JaumCoin Casino' owner='JaumDark' players={843} stars={1230} />
-        <Card hash='0x33624' totalValue='99999' gameName='JaumCoin Casino' owner='JaumDark' players={843} stars={1230} />
-        <Card hash='0x33624' totalValue='99999' gameName='JaumCoin Casino' owner='JaumDark' players={843} stars={1230} />
-        <Card hash='0x33624' totalValue='99999' gameName='JaumCoin Casino' owner='JaumDark' players={843} stars={1230} />
-        <Card hash='0x33624' totalValue='99999' gameName='JaumCoin Casino' owner='JaumDark' players={843} stars={1230} />
-        <Card hash='0x33624' totalValue='99999' gameName='JaumCoin Casino' owner='JaumDark' players={843} stars={1230} />
-
       </div>
     </div>
   )
