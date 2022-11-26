@@ -14,7 +14,6 @@
 
 <div align="center">
 
-[![License](https://img.shields.io/github/license/block-betting/block-betting-monorepo)](#license)
 <a href="https://gitpod.io/#https://github.com/block-betting/block-betting-monorepo" target="_blank">
 <img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod" alt="Gitpod">
 </a>
@@ -47,5 +46,7 @@ Once you open the gitpod, it will launch the services listed below, it takes ~2 
 Once all services have started, you can see the list of available ports going to the `PORTS` tab next to the terminal window. It is important to note that The Gitpod instance will close automatically after `30 minutes of inactivity`.
 
 <p align="center">
-  <img src="" alt="Gitpod 01"/>
+  <img src="https://user-images.githubusercontent.com/78161484/204108165-567a34c9-2c3c-4d49-95bd-83fe1a6c9ade.png" alt="Gitpod 01"/>
 </p>
+
+
