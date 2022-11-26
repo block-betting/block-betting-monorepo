@@ -9,6 +9,8 @@ import styles from './styles.module.scss'
 import create from './assets/create.svg'
 import close from './assets/close.svg'
 
+import MetamaskPopup from '../MetamaskPopup'
+
 const MyBetsComponent = () => {
   const [active, setActive] = useState(false)
 
@@ -118,6 +120,7 @@ const MyBetsComponent = () => {
 
         : null
       }
+      <MetamaskPopup />
     </div>
   )
 }
