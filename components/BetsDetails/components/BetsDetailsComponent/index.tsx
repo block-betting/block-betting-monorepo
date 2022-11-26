@@ -179,7 +179,6 @@ const BetsDetailsComponent = ({...props}: dataProps) => {
             data <br />
             data <br />
             data <br />
-            Phil é viciado em gatos <br />
             data <br />
             data <br />
           </div>
@@ -213,7 +212,6 @@ const BetsDetailsComponent = ({...props}: dataProps) => {
             data <br />
             data <br />
             data <br />
-            E em brejas<br />
             data <br />
             data <br />
           </div>

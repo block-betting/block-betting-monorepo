@@ -58,6 +58,26 @@
             border-radius: 10px;
             background: transparent;
             outline: transparent;
+            color: var(--textgray);
+          }
+        }
+
+        .nameContainer {
+          margin-bottom: 20px;
+
+          .label {
+            color: #515151;
+            margin: 0px 0px 5px 10px;
+          }
+
+          .nameInput {
+            width: 100%;
+            padding: 10px 0px 10px 8px;
+            border: 1px solid var(--backgroundgray);
+            border-radius: 10px;
+            background: transparent;
+            outline: transparent;
+            color: var(--textgray);
           }
         }
 
@@ -84,6 +104,7 @@
               background: transparent;
               outline: transparent;
               border: transparent;
+              color: var(--textgray);
             }
 
             .eyeContainer {

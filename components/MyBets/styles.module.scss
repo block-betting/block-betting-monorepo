@@ -2,16 +2,16 @@
   display: flex;
   flex-direction: row;
   background: var(--backgroundgray);
+  color: var(--textgray);
 
   .column {
-    margin-left: -100px;
+    padding-left: 200px;
     display: flex;
     flex-direction: column;
 
     .createBetContainer {
-      width: 100vw;
+      width: calc(100vw - 250px);
       height: 15vh;
-      margin-left: 50px;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -75,9 +75,10 @@
 
           .inputContainer {
             padding: 10px 0px;
+            
 
             .label {
-              color: #515151;
+              color: var(--textgray);
               font-size: 14px;
               margin-left: 8px;
               margin-bottom: 5px;
@@ -93,6 +94,7 @@
                 background: var(--navbargray);
                 padding: 8px 0px;
                 margin: 0px 5px;
+                color: var(--textgray);
               }
             }
           }

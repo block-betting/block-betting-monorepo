@@ -53,7 +53,7 @@ const Sidebar = () => {
         </div>
 
         <div className={styles.optionsContainer}>
-          <div className={styles.settingsContainer} onClick={() => window.open('/settings', '_self')}>
+          <div className={styles.settingsContainer} onClick={() => window.open('/dashboard', '_self')}>
             <div className={styles.settingsImage}>
               <Image src={settings} alt='Settings' />
             </div>

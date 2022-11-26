@@ -8,9 +8,6 @@ import arrow from './assets/arrow.svg'
 const DataNotMatch = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.arrow}>
-        <Image src={arrow} alt='Arrow' />
-      </div>
       <div className={styles.row}>
         <div className={styles.signal}>
           <Image src={signal} alt='Error' />

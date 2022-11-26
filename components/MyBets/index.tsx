@@ -76,14 +76,34 @@ const MyBetsComponent = () => {
                 </div>
 
                 <div className={styles.inputContainer}>
+                    <div className={styles.label}>
+                      Competitor One
+                    </div>
+
+                    <div className={styles.input}>
+                      <input type="text" />
+                    </div>
+                </div>
+
+                <div className={styles.inputContainer}>
+                    <div className={styles.label}>
+                      Competitor Two
+                    </div>
+
+                    <div className={styles.input}>
+                      <input type="text" />
+                    </div>
+                  </div>
+
+                <div className={styles.inputContainer}>
                   <div className={styles.label}>
                     Game Type
                   </div>
 
                   <div className={styles.input}>
                     <select name='type' id='type'>
-                      <option value='crash'>Crash</option>
-                      <option value='roulette'>Roulette</option>
+                      <option value='winner'>Winner</option>
+                      <option value='sweepstake'>Sweepstake</option>
                     </select>
                   </div>
                 </div>
