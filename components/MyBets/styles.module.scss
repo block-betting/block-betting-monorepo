@@ -4,14 +4,13 @@
   background: var(--backgroundgray);
 
   .column {
-    margin-left: -100px;
+    padding-left: 200px;
     display: flex;
     flex-direction: column;
 
     .createBetContainer {
-      width: 100vw;
+      width: calc(100vw - 250px);
       height: 15vh;
-      margin-left: 50px;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
