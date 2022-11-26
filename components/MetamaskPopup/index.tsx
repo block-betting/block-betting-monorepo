@@ -3,10 +3,39 @@ import Image from 'next/image'
 import styles from './styles.module.scss'
 
 import metamask from './assets/metamask.svg'
-import { useState } from 'react'
+import React, { useState, useContext, useCallback, useEffect } from 'react';
+import { Web3ModalContext } from '../../context/web3modal';
 
 const MetamaskPopup = () => {
-  const [visible, setVisible] = useState(true)
+  
+  const { account , connect } = useContext(Web3ModalContext);
+
+  // Set visible false if account exist and true if account is null
+
+  
+
+  const [visible, setVisible] = useState<boolean>(false);
+
+  const hasAccount = useCallback (async (): Promise<boolean> => {
+    if (account) {
+      return false
+    } else {
+      return true
+    }
+  }, [account]);
+
+  // trigger a re-render
+    
+  useEffect( () => {
+    hasAccount().then((result) => {
+      setVisible(result)
+    })
+  }, [hasAccount])
+
+  const handleConnect = useCallback(async () => {
+    await connect();
+    setVisible(false);
+  }, [connect]);
 
   return (
     <>
@@ -20,7 +49,7 @@ const MetamaskPopup = () => {
 
               <div className={styles.text}>
                 Connect your wallet so we <br />
-                can continue. <span onClick={() => setVisible(false)}>Click here</span>
+                can continue. <span onClick={handleConnect}>Click here</span>
               </div>
             </div>
           </div>
