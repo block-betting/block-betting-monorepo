@@ -1,7 +1,7 @@
 <!-- INTRODUCTION -->
 <br>
 <p align="center">
-  <a href="https://github.com/metamathstudios" target="_blank" rel="noopener noreferrer">
+  <a href="https://gitpod.io/#https://github.com/block-betting/block-betting-monorepo" target="_blank" rel="noopener noreferrer">
     <img width="100" src="https://user-images.githubusercontent.com/78161484/204107355-f9b2503b-06ab-4c65-8356-5ccef15e93b3.png" alt="Block Betting Logo">
   </a>
   
